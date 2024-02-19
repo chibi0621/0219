@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <Nav></Nav>
     <h1>
         LOGIN <span class="material-symbols-outlined">login</span>
       </h1>
