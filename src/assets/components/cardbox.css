@@ -1,0 +1,47 @@
+@import '@/assets/all.css';
+
+.cardBox {
+    margin: 60px 6% 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 210px;
+    height: 175px;
+    background-color: #007979;
+    margin-bottom: 5%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 0 10% 0 10%;
+}
+
+.card-title {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.card-title, .card-link {
+    margin-bottom: 3%;
+}
+
+.card-link {
+    display: flex;
+    justify-content: end;
+    margin-top: 10%;
+    color: #fff;
+}
+
+.card-link:hover {
+    color: #1e1e1e;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    border-bottom: 1px solid #fff;
+}
