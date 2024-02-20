@@ -1,4 +1,5 @@
 <template>
+  <Navbar></Navbar>
   <div class="container">
     <h1>
         LOGIN <span class="material-symbols-outlined">login</span>
@@ -30,9 +31,13 @@
 </template>
 
 <script>
+import Navbar from '@/components/NavBar.vue';
 import '@/assets/login.css';
 
 export default {
+  components: {
+    Navbar,
+  },
   created() {
     console.log('hello login-page!');
   },

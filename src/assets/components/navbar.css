@@ -1,0 +1,24 @@
+@import '@/assets/all.css';
+
+nav {
+    background-color: #019090;
+    width: 100%;
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+li > a:hover {
+    color: #1e1e1e;
+    font-weight: bold;
+    transform: scale(1.05);
+    opacity: .9;
+}

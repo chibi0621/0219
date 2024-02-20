@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <header>
       <!-- bc:007979 -->
       <div class="dashboard">
@@ -12,14 +12,7 @@
           </a>
         </h6>
       </div>
-      <nav>
-      <!-- bc:019090 -->
-        <ul>
-          <li><router-link to="/">HOME</router-link></li>
-          <li>｜</li>
-          <li><router-link to="/login">LOGIN</router-link></li>
-        </ul>
-      </nav>
+      <Navbar></Navbar>
     </header>
     <main>
       <!-- bc:fff / bootstrap-card*10 上5下5 -->
@@ -29,13 +22,14 @@
 </template>
 
 <script>
+import Navbar from '@/components/NavBar.vue';
 import CardBox from '@/components/CardBox.vue';
 import '@/assets/home.css';
 
 export default {
   name: 'HomeView',
   components: {
-    CardBox,
+    Navbar, CardBox,
   },
   created() {
     console.log('hello home-page!');
